@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67fda810af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" style="text-shadow: 5px 5px 15px black;">
+                <p style="color: rgb(0, 24, 244);"> Full-Stack Developer</p>
+                <h1>Hi, <br>I'm <span>Abhishek Pradhan</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello, I'm Abhishek Pradhan, a highly motivated and experienced full-stack developer with a passion for crafting exceptional digital experiences. With a keen eye for design, a knack for problem-solving, and a drive to stay up-to-date with the latest technologies, I create innovative apps and websites that are both beautiful and functional. From conceptualization to deployment, I take pride in delivering high-quality solutions that meet and exceed client expectations. Let's collaborate and bring your vision to life!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Websites</li>
+                            <li><span>App Development</span><br>Building Mobile Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intern At Interpe</span><br>Java Internship</li>
+                            <li><span>Forage</span><br>Accenture Virtual Experience Programme</li>
+                            <li><span>Seenet STPI</span><br>Completed C/C++ Module With Project</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Graduation 2022-2026</span><br>Computer Science & Engineering<br>GITA Autonomous College, Bhubaneswar</li>
+                            <li><span>Senior Secondary(XII), CBSE 2020</span><br>St. Arnold's School, Rourkela<br>Percentage: 70%</li>
+                            <li><span>Secondary(X), CBSE 2022</span><br>St. Arnold's School, Rourkela<br>Percentage: 90%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I design and develop fast, secure, and scalable websites and web applications that meet your business needs. With expertise in both front-end and back-end development, I can help you create a strong online presence.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>I design and develop high-quality, user-friendly mobile apps. With expertise in both native and cross-platform development, I can help you bring your app idea to life.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/hotel.jpg">
+                    <div class="layer">
+                        <h3>Hotel Management System</h3>
+                        <p>Designed and developed a comprehensive Hotel Management System in C++. Features room booking, guest management, billing, and report generation.</p>
+                        <a href="https://github.com/abhishekpradhan17/Hotel-Management-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tictactoe.jpg">
+                    <div class="layer">
+                        <h3>Tic Tac Toe with AI</h3>
+                        <p>Created a console-based Tic Tac Toe game in Python, offering a fun and interactive gaming experience. Showcases my proficiency in Python programming and ability to develop engaging applications.</p>
+                        <a href="https://github.com/abhishekpradhan17/CODSOFT/tree/main/TASK%202_TicTacToe"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio.jpg">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Designed and developed a professional portfolio website to showcase my skills and experience. Highlights my expertise in web development, user interface design, and creating engaging online experiences.</p>
+                        <a href="https://github.com/abhishekpradhan17/Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/abhishekpradhan17" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> pradhanabhishek723@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +918895331559</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/abhishek_pradhan.723?igsh=c2JkcWQ5Z3dyeGJw"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1EtMn2cC6p/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://x.com/Abhishe97351312?t=VKcT2pmb7c6RLoj0l4RxmQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/abhishek-pradhan-032704288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/abhishekpradhan17"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/AbhishekResume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Abhishek Pradhan. All rights reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right ="0";
+        }
+        function closemenu(){
+            sidemeu.style.right ="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzs_7QPU6SzN5uUkzd7vvpST-zZC7Or1ASdjE5i1c0Yx-dEWUZQ54GYojIdMCGleT_T/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
